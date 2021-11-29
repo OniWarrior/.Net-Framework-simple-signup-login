@@ -13,5 +13,8 @@ public class Profile
 	    // Username of user
 		public string Username { get; set; }
 
+	    // Password of user
+		public string Password { get; set; }
+
 	}
 }
