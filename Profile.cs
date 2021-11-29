@@ -9,6 +9,9 @@ public class Profile
 	{
 		//Id to identify profile
 		public int ID { get; set; }
+	    
+	    // Username of user
+		public string Username { get; set; }
 
 	}
 }
