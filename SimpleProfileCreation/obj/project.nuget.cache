@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LART2t16SiGmN041c8d3t05dJfaJZPuXcZ1uPdkgcGi4uhyz2zD3x5GpoAsVBGtIWWITOoH9bcL5fil07afrJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arand\\git\\signup-login-DotNet\\SimpleProfileCreation\\SimpleProfileCreation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arand\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\arand\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
