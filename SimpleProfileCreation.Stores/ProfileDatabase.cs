@@ -5,9 +5,18 @@ namespace SimpleProfileCreation.Stores
 {
     public abstract class ProfileDatabase : IProfileDatabase
     {
+        // middleware for adding a profile
         public Profile AddProfile(Profile profile)
         {
-            throw new NotImplementedException();
+            // check for duplicate profiles and/or existing usernames
+            foreach(Profile individual in GetProfiles())
+            {
+                if(profile == individual)
+                {
+                    throw new ArgumentException("This profile already exists");
+                }
+                
+            }
         }
 
         public void DeleteProfile(int id)
