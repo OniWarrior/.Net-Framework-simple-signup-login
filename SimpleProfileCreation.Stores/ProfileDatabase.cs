@@ -33,6 +33,7 @@ namespace SimpleProfileCreation.Stores
 
 
         #region Core Functionality:Members
+        protected abstract Profile AddProfileCore(Profile profile);
         #endregion
     }
 }
