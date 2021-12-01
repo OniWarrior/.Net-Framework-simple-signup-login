@@ -11,7 +11,8 @@ namespace SimpleProfileCreation
         Profile AddProfile(Profile profile);
         Profile GetProfile(int id);
         IEnumerable<Profile> GetAllProfiles();
-
+        Profile UpdateProfile( Profile profile);
+        void DeleteProfile(int id);
     }
 }
 	
