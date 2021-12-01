@@ -34,6 +34,7 @@ namespace SimpleProfileCreation.Stores
 
         #region Core Functionality:Members
         protected abstract Profile AddProfileCore(Profile profile);
+        protected abstract Profile GetProfileCore(int id);
         #endregion
     }
 }
