@@ -29,5 +29,10 @@ namespace SimpleProfileCreation.Stores
         {
             throw new NotImplementedException();
         }
+
+
+
+        #region Core Functionality:Members
+        #endregion
     }
 }
