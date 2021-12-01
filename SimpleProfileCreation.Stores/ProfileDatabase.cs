@@ -36,6 +36,7 @@ namespace SimpleProfileCreation.Stores
         protected abstract Profile AddProfileCore(Profile profile);
         protected abstract Profile GetProfileCore(int id);
         protected abstract Profile UpdateProfileCore(Profile existing, Profile update);
+        protected abstract IEnumerable<Profile> GetProfilesCore();
         #endregion
     }
 }
