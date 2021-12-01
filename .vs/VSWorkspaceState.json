@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SimpleProfileCreation"
   ],
-  "SelectedNode": "\\Profile.cs",
+  "SelectedNode": "\\SimpleProfileCreation\\IProfileDatabase.cs",
   "PreviewInSolutionExplorer": false
 }
