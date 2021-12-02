@@ -84,6 +84,15 @@ namespace SimpleProfileCreation.Stores
         {
             // get the existing profile.
             Profile existing = GetProfile(profile.ID) ?? throw new ArgumentException("Profile was not found");
+
+            try
+            {
+                return UpdateProfileCore(existing, profile);
+            }
+            catch(SqlException err)
+            {
+                throw new Exception("Update failed", err);
+            }
         }
 
 
