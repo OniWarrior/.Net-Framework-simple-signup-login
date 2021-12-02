@@ -34,7 +34,8 @@ namespace SimpleProfileCreation.Stores
 
         public void DeleteProfile(int id)
         {
-            throw new NotImplementedException();
+            // Check to see if this profile even exists.
+            Profile existing = GetProfile(id);
         }
 
         public Profile GetProfile(int id)
