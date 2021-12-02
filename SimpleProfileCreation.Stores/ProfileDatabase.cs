@@ -82,7 +82,8 @@ namespace SimpleProfileCreation.Stores
 
         public Profile UpdateProfile(Profile profile)
         {
-            throw new NotImplementedException();
+            // get the existing profile.
+            Profile existing = GetProfile(profile.ID) ?? throw new ArgumentException("Profile was not found");
         }
 
 
