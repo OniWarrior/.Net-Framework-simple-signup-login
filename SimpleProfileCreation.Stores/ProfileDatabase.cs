@@ -36,6 +36,11 @@ namespace SimpleProfileCreation.Stores
         {
             // Check to see if this profile even exists.
             Profile existing = GetProfile(id);
+            if (existing == null)
+            {
+                throw new ArgumentNullException("This profile does not exist!");
+            }
+
         }
 
         public Profile GetProfile(int id)
