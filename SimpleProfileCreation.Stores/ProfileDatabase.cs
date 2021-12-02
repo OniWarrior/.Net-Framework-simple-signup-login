@@ -41,6 +41,16 @@ namespace SimpleProfileCreation.Stores
                 throw new ArgumentNullException("This profile does not exist!");
             }
 
+            //Delete the profile if it does exist.
+            try
+            {
+                DeleteProfileCore(id);
+            }
+            catch(SqlException err)
+            {
+                throw new Exception('Deletion failed', err);
+            }
+
         }
 
         public Profile GetProfile(int id)
