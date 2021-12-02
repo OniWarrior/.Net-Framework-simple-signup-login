@@ -15,7 +15,10 @@ namespace SimpleProfileCreation.Stores
                 {
                     throw new ArgumentException("This profile already exists");
                 }
-                
+                else if(profile.Username == individual.Username)
+                {
+                    throw new ArgumentException("This username is already taken");
+                }
             }
         }
 
