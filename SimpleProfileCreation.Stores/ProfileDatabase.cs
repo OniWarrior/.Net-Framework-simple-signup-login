@@ -32,6 +32,7 @@ namespace SimpleProfileCreation.Stores
             }
         }
 
+        // Middleware for deletion of profile.
         public void DeleteProfile(int id)
         {
             // Check to see if this profile even exists.
@@ -48,14 +49,21 @@ namespace SimpleProfileCreation.Stores
             }
             catch(SqlException err)
             {
-                throw new Exception('Deletion failed', err);
+                throw new Exception("Deletion failed", err);
             }
 
         }
 
         public Profile GetProfile(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return GetProfileCore(id);
+            }
+            catch(SqlException err)
+            {
+                throw new ArgumentException("Retrieval of profile failed!", err);
+            }
         }
 
         public IEnumerable<Profile> GetProfiles()
