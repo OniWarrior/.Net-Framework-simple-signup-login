@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace SimpleProfileCreation.Stores
 {
@@ -19,6 +20,15 @@ namespace SimpleProfileCreation.Stores
                 {
                     throw new ArgumentException("This username is already taken");
                 }
+            }
+
+            try
+            {
+                return AddProfileCore(profile);
+            }
+            catch (SqlException err)
+            {
+                throw new Exception("Add failed",err);
             }
         }
 

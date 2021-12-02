@@ -1,0 +1,4 @@
+C:\Users\arand\git\signup-login-DotNet\SimpleProfileCreation.Stores\bin\Debug\netstandard2.0\SimpleProfileCreation.dll
+C:\Users\arand\git\signup-login-DotNet\SimpleProfileCreation.Stores\obj\Debug\netstandard2.0\SimpleProfileCreation.Stores.csprojAssemblyReference.cache
+C:\Users\arand\git\signup-login-DotNet\SimpleProfileCreation.Stores\obj\Debug\netstandard2.0\SimpleProfileCreation.Stores.AssemblyInfoInputs.cache
+C:\Users\arand\git\signup-login-DotNet\SimpleProfileCreation.Stores\obj\Debug\netstandard2.0\SimpleProfileCreation.Stores.AssemblyInfo.cs
