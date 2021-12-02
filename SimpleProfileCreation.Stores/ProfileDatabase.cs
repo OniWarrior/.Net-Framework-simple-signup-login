@@ -54,6 +54,7 @@ namespace SimpleProfileCreation.Stores
 
         }
 
+        // Middleware for profile retrieval.
         public Profile GetProfile(int id)
         {
             try
@@ -66,9 +67,17 @@ namespace SimpleProfileCreation.Stores
             }
         }
 
+        // Middleware of profiles retrieval.
         public IEnumerable<Profile> GetProfiles()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return GetProfilesCore();
+            }
+            catch(SqlException err)
+            {
+                throw new Exception("Retrieval of profiles failed", err);
+            }
         }
 
         public Profile UpdateProfile(Profile profile)
